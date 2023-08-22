@@ -76,8 +76,7 @@ class _HomeScreenState extends State<HomeScreen> {
     if (!hasPermissions) {
       // requesting access to the data types before reading them
       try {
-        authorized =
-        await health.requestAuthorization(types, permissions: permissions);
+        authorized = await health.requestAuthorization(types, permissions: permissions);
       } catch (error) {
         print("Exception in authorize: $error");
       }
@@ -359,11 +358,14 @@ class _HomeScreenState extends State<HomeScreen> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Health Example'),
+          elevation: 0,
+          centerTitle: true,
+          title:  Text('Health Kit'),
         ),
         body: Container(
           child: Column(
             children: [
+              SizedBox(height: 20,),
               Wrap(
                 spacing: 10,
                 children: [

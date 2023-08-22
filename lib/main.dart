@@ -5,7 +5,7 @@ import 'package:health_kit/home_screen.dart';
 void main() async {
   runApp(
     GetMaterialApp(
-      title: 'One Look',
+      title: 'Health Kit',
       debugShowCheckedModeBanner: false,
       home: HomeScreen(),
     ),
