@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:health_kit/home2.dart';
 import 'package:health_kit/home_screen.dart';
 
 void main() async {
